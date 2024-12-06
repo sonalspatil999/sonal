@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+Welcome to spring application
+
+${msg}
+
+<% String msg = (String)request.getAttribute(msg); %>
+
+<form action="/reg">
+<h1>Registration form</h1>
+Student id:<input name="sid">
+Student name:<input name="sname">
+
+<button value="submit">Register</button>
+
+</form>
+</body>
+</html>
